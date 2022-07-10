@@ -39,14 +39,16 @@ const Header = (props: HeaderProps) => {
       <h1>Online Library</h1>
       <form onSubmit={submitHandler}>
         <div className={classes.search}>
-          <input
-            type='name'
-            placeholder='Search'
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
-          <button>
-            <img src={'/searchIcon.svg'} alt='icon' />
-          </button>
+          <div>
+            <input
+              type='name'
+              placeholder='Search'
+              onChange={(e) => setSearchTerm(e.target.value)}
+            ></input>
+            <button className={classes.searchButton}>
+              <img src={'/searchIcon.svg'} alt='icon' />
+            </button>
+          </div>
         </div>
         <div className={classes.options}>
           <div className={classes.option}>

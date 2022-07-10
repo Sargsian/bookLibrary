@@ -23,14 +23,17 @@ h1 {
 .search {
   display: flex;
   justify-content: center;
-  align-items: center;
-
-  input {
-    font-family: 'Nunito', sans-serif;
-    width: 50%;
+  div {
+    position: relative;
+    width: calc(50% + 2rem);
     @media screen and (max-width: 600px) {
       width: 100%;
     }
+  }
+  input {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+
     &:focus {
       outline: none;
     }
@@ -46,6 +49,8 @@ h1 {
   }
   button {
     padding: 8px;
+    position: absolute;
+    right: 0;
     cursor: pointer;
     &:hover {
       img {
