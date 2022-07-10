@@ -1,0 +1,120 @@
+.container {
+  display: flex;
+  width: calc(100% - 6rem);
+  gap: 5rem;
+  position: absolute;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 0;
+  }
+  @media screen and (max-width: 330px) {
+    padding: 2rem 0;
+  }
+}
+
+.main {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 0 5rem 5rem;
+  justify-content: space-between;
+  gap: 2rem;
+  position: relative;
+  width: 60%;
+
+  @media screen and (max-width: 1200px) {
+    width: 100%;
+    padding: 5rem;
+    &::before {
+      content: '';
+      width: 80%;
+      height: 1px;
+      position: absolute;
+      top: 1.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding: 5rem 0;
+  }
+}
+
+.sidebar {
+  width: 40%;
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 12rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  &::before {
+    content: '';
+    height: 90%;
+    right: 0;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.089);
+    position: absolute;
+  }
+
+  @media screen and (max-width: 1200px) {
+    height: auto;
+    width: 100%;
+    min-width: 25rem;
+    position: static;
+
+    img {
+      // width: 100%;
+    }
+
+    &::before {
+      content: unset;
+    }
+  }
+}
+
+.desc {
+  font-size: 1.7rem;
+  line-height: 1.6;
+}
+
+.title {
+  h1 {
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    margin-left: 0;
+    text-align: start;
+  }
+}
+
+.authors,
+.categories {
+  font-size: 1.6rem;
+  opacity: 0.7;
+  padding-right: 2rem;
+}
+
+.test {
+  width: 35rem;
+}
+
+.imageContainer {
+  width: 100%;
+  min-width: 35rem;
+  // height: 50rem;
+  // min-height: 35rem;
+  @media screen and (max-width: 600px) {
+    min-width: 25rem;
+  }
+  height: 0;
+  font-size: 7em;
+  // background-color: green;
+  padding-bottom: calc(100% * 10 / 7);
+  position: relative;
+}

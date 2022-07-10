@@ -1,0 +1,35 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 3rem;
+  padding: 3rem 3rem 5rem 3rem;
+  justify-items: center;
+
+  @media screen and (max-width: 60rem) {
+    padding: 1rem;
+  }
+}
+
+.searchResult {
+  margin: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.loadMore {
+  display: block;
+  padding: 1rem 2rem;
+  margin-bottom: 5rem;
+  position: relative;
+  left: 50%;
+  font: inherit;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background-color: #414e5b;
+  transform: translateX(-50%);
+  &:hover {
+    background-color: #262d35;
+  }
+}
