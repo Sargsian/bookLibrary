@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Book library using google books api
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+address https://github.com/Sargsian/bookLibrary
 
 ## Available Scripts
 
