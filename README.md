@@ -1,6 +1,6 @@
 # Book library using Google's Book API
 
-## Address https://book-library-six.vercel.app/
+## [Go to Project!](https://ecommerce-client.onrender.com/)
 
 * The projct was built as a test assignment using React, Typescript and Redux toolkit. 
 For API interactions i resorted to RTK Query.
