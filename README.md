@@ -1,4 +1,4 @@
-# Book library using ***google books api***
+# Book library using Google's Book API
 
 ## Address https://book-library-six.vercel.app/
 
